@@ -38,6 +38,7 @@ header {
 
 .movie {
     padding: 0;
+    margin: 20px;
 }
 
 .movie {
@@ -148,7 +149,8 @@ header {
 }
 
 .overview {
-    background-color: rgb(136, 136, 136);
+    background: rgb(54, 53, 53);
+    color: rgb(54, 53, 53);
     padding: 2rem;
     position: absolute;
     max-height: 100%;
@@ -163,7 +165,8 @@ header {
 }
 
 .movie:hover .overview {
-    transform: translateY(0) ;
+    transform: translateY(0);
+    background-color: rgb(136, 136, 136);
 }
 
 .overview h3 {
