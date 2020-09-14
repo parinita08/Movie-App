@@ -16,16 +16,7 @@ async function getMovies(url) {
 
     console.log(responseData);
 
-    // responseData.results.forEach(movie => {
-    //     const img = document.createElement('img');
-    //     img.src = picPath + movie.poster_path;
-
-    //     document.body.appendChild(img);
-    // });
-
     showMovies(responseData.results);
-
-    // return responseData;
 }
 
 function showMovies(movies) {

@@ -55,11 +55,6 @@ header {
     transition: all 0.5s ease-in-out 0.5s;
 }
 
-/* .movie:hover {
-    transform: scale(1.05);
-    box-shadow: 1px solid black;
-} */
-
 .movie .img-box img{
     transform: rotateX(0);
     transition: all 0.5s ease-in-out 0s;

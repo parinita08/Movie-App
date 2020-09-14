@@ -1,7 +1,6 @@
 Movie App
 1. need a movie api
 2. list of movies
-3. shows movie info - name,rating,etc.
-4. add fav movies
-5. diff categories
-6. rating in different colours - green, orange, red (maybe or diff colours?)
+3. shows movie info - name,rating,overview,etc.
+4. search movies
+5. rating in different colours - green, orange, red (maybe or diff colours?)
