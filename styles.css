@@ -1,0 +1,165 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    justify-content: space-between;
+}
+
+body {
+    margin: 0; 
+    padding:0;
+    font-family: sans-serif;
+    background: rgb(54, 53, 53);
+}
+
+header {
+    background-color: rgb(75, 73, 73);
+    padding: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 50px;
+    color: whitesmoke;
+    background-color: transparent;
+    border: 2px solid rgb(51, 49, 49);
+}
+
+.search:focus {
+    outline: none;
+}
+
+.movie {
+    padding: 0;
+}
+
+.movie {
+    position: relative;
+    width: 250px;
+    perspective: 1000px;
+    transition: all 0.5s ease-in-out 0.5s;
+}
+
+/* .movie:hover {
+    transform: scale(1.05);
+    box-shadow: 1px solid black;
+} */
+
+.movie .img-box img{
+    transform: rotateX(0);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.movie:hover .img-box img {
+    transform: rotateY(-90deg);
+}
+
+.movie .img-box img {
+    width: 250px;
+    height: 380px;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.movie .movie-info {
+   color: whitesmoke;
+   background: rgba(0, 0, 0, 0.801);
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   box-sizing: border-box;
+   padding: 90px 20px;
+   text-align: center;
+
+   border-radius: 10px;
+   transform: rotateY(90deg);
+   transition: all 0.5s ease-in-out 0s;
+}
+
+.movie:hover .movie-info {
+    transform: rotateY(0);
+}
+
+.movie .movie-info p {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+.movie .buttons {
+   background: none;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   box-sizing: border-box;
+   padding: 260px 50px;
+   text-align: center;
+   align-items: center;
+   transform: rotateY(90deg);
+   transition: all 0.5s ease-in-out 0s;
+} */
+
+.movie:hover .buttons {
+    transform: rotateY(0);
+}
+
+.movie .buttons li {
+    list-style: none;
+    padding: 15px 0;
+    color: white;
+    font-size: 15px;
+}
+
+.movie .buttons li a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid transparent;
+    padding: 5px 10px;
+    background: rgb(75, 73, 73);
+    border-radius: 50px;
+}
+
+.movie .buttons li a:hover {
+    background: rgb(49, 47, 47);
+}
+
+.movie .movie-info p.green{
+    color: rgb(99, 205, 50);
+}
+
+.movie .movie-info p.orange{
+    color: rgb(255, 145, 71);
+}
+
+.movie .movie-info p.red{
+    color: rgb(255, 71, 71);
+}
+
+/* .overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+} */
