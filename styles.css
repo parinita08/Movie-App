@@ -147,19 +147,25 @@ header {
     color: rgb(255, 71, 71);
 }
 
-/* .overview {
-    background-color: #fff;
+.overview {
+    background-color: rgb(136, 136, 136);
     padding: 2rem;
     position: absolute;
     max-height: 100%;
     overflow: auto;
+    font-size: 12px;
     left: 0;
     bottom: 0;
     right: 0;
-    transform: translateY(101%);
+    transform: translateY(102%);
     transition: transform 0.3s ease-in;
+    border-radius: 10px;
+}
+
+.movie:hover .overview {
+    transform: translateY(0) ;
 }
 
 .overview h3 {
     margin-top: 0;
-} */
+}
